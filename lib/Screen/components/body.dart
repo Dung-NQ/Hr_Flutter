@@ -14,18 +14,26 @@ class Body extends StatelessWidget {
       width: double.infinity,
       child:Stack(
         children: <Widget>[
-          Container(
-            child: Image.asset('assets/Screen/Circle-red',
-            width: 70,
-            height: 50,
+          Positioned(
+            child: Image.asset('assets/Screen/Cirred1.png',
+            width: 300,
+            height: 300,
               fit: BoxFit.cover,
             ),
+            top: -100,
+            left: -200,
           ),
-          Container(),
-          Container(),
+          Positioned
+            (child: Image.asset('assets/Screen/Cirred1.png',
+            width: 200,
+            height: 200,
+            fit: BoxFit.cover,
+          ),
+            bottom: -100,
+            right: -60,
+          ),
         ],
       ),
-
     );
   }
 }
