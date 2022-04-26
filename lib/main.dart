@@ -1,28 +1,24 @@
 import 'package:flutter/material.dart';
+import 'Screen/login.dart';
+void main() {
+  runApp(Icrem());
+}
+class Icrem extends StatefulWidget {
+  @override
+  State<Icrem> createState() => _IcremState();
+}
 
-void main() { runApp(Mytage()); }
+class _IcremState extends State<Icrem> {
 
-class Mytage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(
-          primarySwatch: Colors.green,
-        ),
-        home: Mytage()
-    );
-  }
-}
-class Mycs extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title:Text("Text Widget Example")
+     title:("Diligo Sales"),
+      theme: ThemeData(
+              scaffoldBackgroundColor: Colors.white,
       ),
-      body: Center(
-          child:Text("Welcome to Cafedev")
-      ),
+      home: Screen_login(),
     );
   }
 }
